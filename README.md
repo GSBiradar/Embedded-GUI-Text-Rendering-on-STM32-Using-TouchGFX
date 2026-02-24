@@ -5,16 +5,16 @@ Project Explanation
 STM32F429I-DISC1
 
 
-## 1️⃣ Introduction to the Project
+### 1️⃣ Introduction to the Project
 The project demonstrates how to display a string message on the LCD screen of the STM32F429 Discovery board.
 The string is defined inside the main() function.
 The board processes the string and displays it using its built-in TFT LCD.
 This project shows how microcontrollers can interact with graphical displays.
 
-## 2️⃣ About STM32F429 Discovery Board
+### 2️⃣ About STM32F429 Discovery Board
 It is based on the STM32F429ZIT6 microcontroller.
 Developed by STMicroelectronics.
-# It includes:
+#### It includes:
 ARM Cortex-M4 core
 2MB Flash memory
 256KB RAM

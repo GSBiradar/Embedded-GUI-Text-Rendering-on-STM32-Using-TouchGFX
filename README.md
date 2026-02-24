@@ -20,26 +20,26 @@ ARM Cortex-M4 core
 256KB RAM
 2.4-inch TFT LCD display
 Touch controller
-# It supports graphical libraries like:
+#### It supports graphical libraries like:
 STM32 HAL
 BSP (Board Support Package)
 LTDC peripheral driver
 
-## 3️⃣ Objective of the Project
+### 3️⃣ Objective of the Project
 To initialize the LCD display.
 To configure graphical layers.
 To send a text string from main().
 To display the string properly on the LCD screen.
 To understand LCD interfacing with microcontrollers.
 
-## 4️⃣ Main Components Used
-# 🧠 1. Microcontroller (STM32F429ZIT6)
+### 4️⃣ Main Components Used
+#### 🧠 1. Microcontroller (STM32F429ZIT6)
 Executes the program.
 Sends display data to LCD.
-# 🖥️ 2. TFT LCD Display
+#### 🖥️ 2. TFT LCD Display
 240 × 320 resolution.
 Controlled using LTDC (LCD-TFT Display Controller).
-# ⚙️ 3. LTDC Peripheral
+#### ⚙️ 3. LTDC Peripheral
 Hardware block inside STM32.
 Responsible for:
 Generating display signals.
@@ -49,28 +49,28 @@ Controlling layers.
 Memory area where pixel data is stored.
 The string is converted into pixel format and stored here.
 
-## 5️⃣ Working Principle
+### 5️⃣ Working Principle
 # Step 1: System Initialization
 Power is supplied.
 System clock is configured.
 HAL library is initialized.
 
-# Step 2: LCD Initialization
+#### Step 2: LCD Initialization
 LCD controller is configured.
 Display resolution and timing parameters are set.
 Frame buffer memory is assigned.
 
-# Step 3: Layer Configuration
+#### Step 3: Layer Configuration
 A display layer is created.
 Background color is set.
 Font and text color are selected.
 
-# Step 4: String Processing
+#### Step 4: String Processing
 The string inside main() is read.
 Each character is converted into pixel representation using font data.
 Pixel data is written into frame buffer.
 
-# Step 5: Display Output
+#### Step 5: Display Output
 LTDC reads data from frame buffer.
 LCD displays the string on screen.
 
@@ -90,21 +90,21 @@ This creates visible text.
 Combination of hardware and software.
 STM32 acts as embedded controller.
 
-# 🔹 GUI (Graphical User Interface)
+#### 🔹 GUI (Graphical User Interface)
 Allows visual interaction.
 Text, shapes, images can be displayed.
 
-# 🔹 Memory Mapping
+#### 🔹 Memory Mapping
 Frame buffer is mapped in RAM.
 LTDC accesses memory continuously.
 
-# 🔹 Peripheral Configuration
+#### 🔹 Peripheral Configuration
 LTDC must be configured with:
 Sync timings
 Pixel clock
 Polarity settings
 
-## 8️⃣ Why This Project Is Important
+### 8️⃣ Why This Project Is Important
 Basic step in GUI development.
 Helps understand:
 Display interfacing
@@ -115,27 +115,27 @@ Touchscreen applications
 Digital dashboards
 Industrial HMIs
 
-## 9️⃣ Applications
+### 9️⃣ Applications
 Medical devices display systems.
 Industrial control panels.
 Automotive dashboards.
 Smart home interfaces.
 Embedded monitoring systems.
 
-## 🔟 Advantages of Using STM32F429
+### 🔟 Advantages of Using STM32F429
 Built-in LTDC controller.
 Hardware acceleration.
 High processing speed.
 Large Flash and RAM.
 Supports RTOS and graphics libraries like TouchGFX.
 
-## 1️⃣1️⃣ Challenges Faced (Typical)
+### 1️⃣1️⃣ Challenges Faced (Typical)
 LCD timing configuration errors.
 Frame buffer memory allocation issues.
 Incorrect clock configuration.
 Text alignment problems.
 
-## 1️⃣2️⃣ Conclusion
+### 1️⃣2️⃣ Conclusion
 The project successfully demonstrates GUI output using STM32F429.
 A string from the main() function is displayed on LCD.
 It proves proper configuration of:
